@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Jekyllで始めるブログ"
 date:   2018-12-19 19:00:00 +0900
 categories:
