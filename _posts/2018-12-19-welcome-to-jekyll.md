@@ -15,7 +15,7 @@ categories:
 
 ```sh
 bundle --path vendor/bundle
-bundle jekyll serve
+bundle exec jekyll serve
 ```
 
 すると、ターミナルが以下のような出力で止まるので:
@@ -25,4 +25,4 @@ Server address: http://127.0.0.1:4000/
 Server running... press ctrl-c to stop.
 ```
 
-Webブラウザで[http://127.0.0.1:4000/](http://127.0.0.1:4000/)にアクセスすると、ローカル環境でjekyllがホストするブログを閲覧できます。
+Webブラウザで[http://127.0.0.1:4000/jekyll-test/](http://127.0.0.1:4000/jekyll-test/)にアクセスすると、ローカル環境でjekyllがホストするブログを閲覧できます。
