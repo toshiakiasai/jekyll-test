@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title:  "Jekyllで始めるブログ"
 date:   2018-12-19 19:00:00 +0900
+author: Toshiaki Asai
 categories:
 - basis
 ---
@@ -26,3 +27,4 @@ Server running... press ctrl-c to stop.
 ```
 
 Webブラウザで[http://127.0.0.1:4000/](http://127.0.0.1:4000/)にアクセスすると、ローカル環境でjekyllがホストするブログを閲覧できます。
+

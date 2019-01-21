@@ -23,31 +23,40 @@
 
     <!-- common style -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/common.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/top.css?v=' | append: site.github.build_revision | relative_url }}">
-
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/article.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/code.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
 
   <body>
-    <header class="header">
+    <header class="header center">
       <div class="header__logo">
-        <a href="/">
+        <a href="{{ site.url }}">
           <img src="/assets/img/donuts_logo_white.png">
         </a>
       </div>
-      <h1 class="header__title">{{ site.title | default: site.github.repository_name }}</h1>
-      <div class="header__sub-title u-sp-none"></div>
-      <div class="u-hover header__entry-button">
-        <a href="https://recruit.jobcan.jp/donuts/list?category_id=7548" target="_blank">エンジニア採用はこちら</a>
-      </div>
+      <h1 class="header__title">{{ page.title }}</h1>
     </header>
 
-    <div class="header__sub-title u-pc-none">{{ site.description | default: site.github.project_tagline }}</div>
-
     <div class="contents">
-      {{ content }}
+      <div class="contents__text-area">
+        <div class="contents__date-area flex">
+          <div class="contents__date-day">{{ page.date | date: "%Y年%m月%d日" }}</div>
+          <div class="contents__date-userName">{{ page.author }}</div>
+        </div>
+        {{ content }}
+      </div>
+    </div>
+    <div class="pagenation flex">
+      {% if page.previous %}
+      <a href="{{ page.previous.url }}" class="pagenation__return">前へ戻る</a>
+      {% endif %}
+      <a href="{{ site.url }}" class="pagenation__top">TOPへ</a>
+      {% if page.next %}
+      <a href="{{ page.next.url }}" class="pagenation__next">次へ進む</a>
+      {% endif %}
     </div>
 
-    <footer class="footer flex">
+    <footer class="footer center">
       <p>&copy; 2019 Donuts Engineer’s Blog</p>
     </footer>
 

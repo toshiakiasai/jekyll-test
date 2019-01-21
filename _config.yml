@@ -13,12 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Test Engineers' Blog
+title: Donuts Engineer’s Blog
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  これはGithub Pagesで公開するWebサイトをJekyllで制作するテストページです。
-  オリジナルのものからテーマを変更しています。
-baseurl: "/tech-blog" # the subpath of your site, e.g. /blog
+  スマホゲームからビジネスアプリまで、幅広いサービスを展開している株式会社Donutsのエンジニア ブログです。
+baseurl: "tech-blog/" # the subpath of your site, e.g. /blog
 url: "http://blog.example.com/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
@@ -27,7 +26,6 @@ url: "http://blog.example.com/" # the base hostname & protocol for your site, e.
 markdown: kramdown
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

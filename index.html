@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<ul>
+  {% for post in site.categories.basis %}
+  <li class="u-hover contents__article">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <div class="contents__image-area">
+        <img src="/assets/img/img2.jpg">
+      </div>
+      <div class="contents__text-area">
+        <div class="contents__date-area flex">
+          <div class="contents__date-day">{{ post.date | date: "%Y年%m月%d日" }}</div>
+          <div class="contents__date-userName">{{ post.author }}</div>
+        </div>
+        <h2 class="contents__title">{{ post.title }}</h2>
+        <p class="contents__sub-text">{{ post.excerpt }}</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
